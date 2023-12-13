@@ -18,7 +18,7 @@ body {
     display: flex;
     width: 80%;
     margin: auto;
-     color:#43a756;
+    color:#43a756;
   }
   
   .header {
@@ -133,7 +133,7 @@ body {
   }
   
   .card {
-    width: 30%;
+    width: 50%;
     background-color: #e5e5e5;
     border-radius: 10px;
     display: flex;
@@ -145,7 +145,7 @@ body {
   }
   
   .card-cadastro {
-    height: 80%;
+    height: 100%;
   }
   
   .card-login {

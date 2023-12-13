@@ -23,7 +23,7 @@ body {
 
 .header {
   height: var(--tamanho-header);
-  background-color: beige;
+  background-color: rgb(245, 245, 219);
   text-transform: uppercase;
 }
 
@@ -92,10 +92,10 @@ body {
 .social {
   background-color: beige;
   display: flex;
+  height: 600px;
 }
 
 .social .container {
-  top: 500px;
   justify-content: center;
 }
 
@@ -146,12 +146,10 @@ body {
   flex-direction: column;
   color:  #43a756;
   row-gap: 20px;
- 
-  
 }
 
 .card-cadastro {
-  height: 80%;
+  height: 95%;
 }
 
 .card-login {
@@ -255,7 +253,7 @@ body {
 .footer {
   height: var(--tamanho-footer);
   width: 100%;
-  background-color: #101010;
+  background-color: rgb(15, 15, 15);
   color: #fff;
   align-items: center;
 }
