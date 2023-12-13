@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
-=======
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
->>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-<<<<<<< HEAD
-=======
-  font-weight: 900;
->>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
   background-color: black;
 }
 
@@ -32,10 +24,7 @@ body {
 .header {
   height: var(--tamanho-header);
   background-color: beige;
-<<<<<<< HEAD
   text-transform: uppercase;
-=======
->>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
 }
 
 .header .container {
@@ -46,7 +35,6 @@ body {
 
 .header a {
   text-decoration: none;
-<<<<<<< HEAD
   color: #111111;
   display: flex;
   justify-content: space-around;
@@ -55,9 +43,6 @@ body {
 .container {
   display: flex;
   justify-content: space-around;
-=======
-  color: #43a756;
->>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
 }
 
 .agora {
@@ -73,16 +58,9 @@ body {
   color: #43a756;
 }
 
-<<<<<<< HEAD
 .titulo img {
   width: 30%;
   height: 5%;
-=======
-.titulo {
-  color:  #43a756;
-  width: fit-content;
-  font-weight: 500;
->>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
 }
 
 .header h1 {
