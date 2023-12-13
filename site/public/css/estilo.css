@@ -73,16 +73,9 @@ body {
   color: #43a756;
 }
 
-<<<<<<< HEAD
 .titulo img {
   width: 30%;
   height: 5%;
-=======
-.titulo {
-  color:  #43a756;
-  width: fit-content;
-  font-weight: 500;
->>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
 }
 
 .header h1 {
