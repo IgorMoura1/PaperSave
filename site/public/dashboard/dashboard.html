@@ -27,11 +27,11 @@
 
 <!-- <body onload=" atualizarFeed()"> -->
 
-<body>
+<body onload="gerarGraficos()">
 
     <div class="janela">
         <div class="header-left">
-            <h1>AquaTech</h1>
+            <h1>PaperSave</h1>
 
             <div class="hello">
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
@@ -39,7 +39,7 @@
 
             <div class="btn-nav-white">
                 <a href="./cards.html">
-                    <h3>Aquários</h3>
+                    <h3>Analytics</h3>
                 </a>
             </div>
 
@@ -86,8 +86,8 @@
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
     var id = sessionStorage.ID_USUARIO;
-    var listaTemperatura = []
-    var listaUmidade = []
+    var listaTemperatura = [0,0,0,0,0]
+    var listaUmidade = [0,0,0,0,0]
 
 setInterval(gerarGraficos,3000);
 // setTimeout(gerarGraficos, 3000)
@@ -129,7 +129,7 @@ var verifica = false
             label: 'Últimas umidades',
             data: listaUmidade,
             backgroundColor: '#1a3950',
-            borderColor: '#a5efd3',
+            borderColor: '#43a756',
 
         }]
     };
@@ -171,7 +171,7 @@ var verifica = false
                 'rgb(26, 57, 80, 0.5)',
                 'rgb(26, 57, 80)'
             ],
-            borderColor: '#fff',
+            borderColor: '#43a756',
             
         }]
     };
