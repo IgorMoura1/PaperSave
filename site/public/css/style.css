@@ -244,7 +244,6 @@ input {
 }
 
 .header-left {
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
@@ -384,4 +383,9 @@ input {
   50%  {transform: rotate(25deg)}
   75%  {transform: rotate(-25deg)}
   100% {transform: rotate(25deg)}
+}
+
+.charts{
+  width: 35vw;
+  margin-left: 10%;
 }

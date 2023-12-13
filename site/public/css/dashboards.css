@@ -118,7 +118,6 @@ body {
   width: 80%;
   position: relative;
   top: 0;
-  left: 20%;
   background-color: #161618;
   height: 100vh;
   overflow: auto;
@@ -275,4 +274,8 @@ body {
 canvas {
   width: 100% !important;
   height: 100% !important;
+}
+
+.charts{
+  left: 20%;
 }

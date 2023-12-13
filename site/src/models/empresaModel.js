@@ -1,27 +1,27 @@
 var database = require("../database/config");
 
 function buscarPorId(id) {
-  var query = `select * from empresa where id = '${id}'`;
+  var query = `select * from Biblioteca where id = '${id}'`;
 
   return database.executar(query);
 }
 
-function listar() {
-  var query = `select * from empresa`;
+// function listar() {
+//   var query = `select * from empresa`;
+
+//   return database.executar(query);
+// }
+
+function buscarPorCnpj(nome) {
+  var query = `select * from Biblioteca where nome = '${nome}'`;
 
   return database.executar(query);
 }
 
-function buscarPorCnpj(cnpj) {
-  var query = `select * from empresa where cnpj = '${cnpj}'`;
+// function cadastrar(razaoSocial, cnpj) {
+//   var query = `insert into empresa (razao_social, cnpj) values ('${razaoSocial}', '${cnpj}')`;
 
-  return database.executar(query);
-}
+//   return database.executar(query);
+// }
 
-function cadastrar(razaoSocial, cnpj) {
-  var query = `insert into empresa (razao_social, cnpj) values ('${razaoSocial}', '${cnpj}')`;
-
-  return database.executar(query);
-}
-
-module.exports = { buscarPorCnpj, buscarPorId, cadastrar, listar };
+module.exports = { buscarPorCnpj, buscarPorId };

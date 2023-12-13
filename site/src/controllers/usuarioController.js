@@ -89,7 +89,18 @@ function cadastrar(req, res) {
     }
 }
 
+function coletarMedida(req,res){
+    var id = req.query.id;
+    usuarioModel.coletarMedida(id)
+    .then(
+        function (resultado){
+            res.json(resultado)
+        }
+    )
+}
+
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    coletarMedida
 }
