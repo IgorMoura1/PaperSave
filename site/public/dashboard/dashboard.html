@@ -34,7 +34,7 @@
             <h1>PaperSave</h1>
 
             <div class="hello">
-                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+                <h3 style="color: #fff;">Olá, <span id="b_usuario" style="color: #43a756;">usuário</span>!</h3>
             </div>
 
             <div class="btn-nav-white">
@@ -106,6 +106,8 @@ function gerarGraficos(){
             listaTemperatura.unshift(res[cont].temperatura) 
             listaUmidade.unshift(res[cont].umidade) 
         }
+        sessionStorage.ultimaTemp = listaTemperatura[4]
+        sessionStorage.ultimaUmid = listaUmidade[4]
     })
     .catch(error => {
         console.error("Erro no lado do cliente:", error);
