@@ -126,13 +126,13 @@ body {
 
 .card {
   width: 30%;
-  background-color: #e5e5e5;
+  background-color: white;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  color: palevioletred;
+  color: green;
   row-gap: 20px;
 }
 
