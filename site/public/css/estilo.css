@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: black;
 }
 
@@ -21,7 +23,8 @@ body {
 
 .header {
   height: var(--tamanho-header);
-  border-bottom: 2px solid #32b9cd;
+  background-color: beige;
+  text-transform: uppercase;
 }
 
 .header .container {
@@ -32,7 +35,14 @@ body {
 
 .header a {
   text-decoration: none;
-  color: #e3b062;
+  color: #111111;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
 }
 
 .agora {
@@ -40,7 +50,7 @@ body {
 }
 
 .navbar {
-  width: 300px;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,10 +58,9 @@ body {
   color: #e3b062;
 }
 
-.titulo {
-  color: #32b9cd;
-  width: fit-content;
-  font-weight: 500;
+.titulo img {
+  width: 30%;
+  height: 5%;
 }
 
 .header h1 {
@@ -81,11 +90,12 @@ body {
 }
 
 .social {
-  background-color: #e5e5e5;
+  background-color: beige;
   display: flex;
 }
 
 .social .container {
+  top: 500px;
   justify-content: center;
 }
 
@@ -106,10 +116,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .box p {
   text-align: center;
+  text-align: justify;
 }
 
 .login {
@@ -237,12 +249,15 @@ body {
 .footer {
   height: var(--tamanho-footer);
   width: 100%;
-  background-color: #32b9cd;
+  background-color: #101010;
   color: #fff;
+  align-items: center;
 }
 
 .footer h4 {
   margin: 0;
+  text-align: justify;
+  text-transform: uppercase;
 }
 
 .footer .container {
