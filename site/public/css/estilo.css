@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
   background-color: black;
 }
 
@@ -32,7 +35,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color: green;
+  color: #43a756;
 }
 
 .agora {
@@ -45,11 +48,11 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  color: green;
+  color: #43a756;
 }
 
 .titulo {
-  color: green;
+  color:  #43a756;
   width: fit-content;
   font-weight: 500;
 }
@@ -126,14 +129,16 @@ body {
 
 .card {
   width: 30%;
-  background-color: white;
+  background-color: #413f3f;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  color: green;
+  color:  #43a756;
   row-gap: 20px;
+ 
+  
 }
 
 .card-cadastro {
@@ -145,8 +150,10 @@ body {
 }
 
 .card h2 {
+  position: relative;
   margin: 0;
   font-size: 30px;
+  top: 20px;
 }
 
 .formulario {
@@ -163,14 +170,14 @@ body {
 }
 
 .formulario input {
-  border: 2px solid #32b9cd;
+  border: 2px solid green;
   height: 30px;
   text-align: center;
   border-radius: 10px;
 }
 
 .formulario select {
-  border: 2px solid #32b9cd;
+  border: 2px solid green;
   background-color: white;
   color: gray;
   height: 36px;
@@ -185,6 +192,8 @@ body {
 }
 
 .botao {
+  position: relative;
+  bottom: 17px;
   cursor: pointer;
   font-family: "Barlow", sans-serif;
   border: 0;
@@ -192,7 +201,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
-  background-color: #e6005a;
+  background-color: #43a756;
   width: 120px;
   height: 30px;
   align-self: center;
@@ -238,7 +247,7 @@ body {
   height: var(--tamanho-footer);
   width: 100%;
   background-color: beige;
-  color: green;
+  color:  #43a756;
 }
 
 .footer h4 {
