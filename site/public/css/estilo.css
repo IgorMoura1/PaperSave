@@ -277,14 +277,9 @@ body {
 .footer {
   height: var(--tamanho-footer);
   width: 100%;
-<<<<<<< HEAD
   background-color: #101010;
   color: #fff;
   align-items: center;
-=======
-  background-color: beige;
-  color:  #43a756;
->>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
 }
 
 .footer h4 {
