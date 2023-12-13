@@ -36,9 +36,6 @@ create table medida (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	dht11_umidade DECIMAL,
 	dht11_temperatura DECIMAL,
-	luminosidade DECIMAL,
-	lm35_temperatura DECIMAL,
-	chave TINYINT,
 	momento DATETIME,
 	fk_Biblioteca INT,
 	FOREIGN KEY (fk_Biblioteca) REFERENCES Biblioteca(id)
