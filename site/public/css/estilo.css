@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+>>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+<<<<<<< HEAD
+=======
+  font-weight: 900;
+>>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
   background-color: black;
 }
 
@@ -24,7 +32,10 @@ body {
 .header {
   height: var(--tamanho-header);
   background-color: beige;
+<<<<<<< HEAD
   text-transform: uppercase;
+=======
+>>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
 }
 
 .header .container {
@@ -35,6 +46,7 @@ body {
 
 .header a {
   text-decoration: none;
+<<<<<<< HEAD
   color: #111111;
   display: flex;
   justify-content: space-around;
@@ -43,6 +55,9 @@ body {
 .container {
   display: flex;
   justify-content: space-around;
+=======
+  color: #43a756;
+>>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
 }
 
 .agora {
@@ -55,12 +70,19 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  color: #e3b062;
+  color: #43a756;
 }
 
+<<<<<<< HEAD
 .titulo img {
   width: 30%;
   height: 5%;
+=======
+.titulo {
+  color:  #43a756;
+  width: fit-content;
+  font-weight: 500;
+>>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
 }
 
 .header h1 {
@@ -126,7 +148,7 @@ body {
 
 .login {
   height: var(--tamanho-login);
-  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-image: url('../assets/imgs/bg-jelly-fish-para-home.jpg');
   background-size: cover;
 }
 
@@ -138,14 +160,16 @@ body {
 
 .card {
   width: 30%;
-  background-color: #e5e5e5;
+  background-color: #413f3f;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  color: palevioletred;
+  color:  #43a756;
   row-gap: 20px;
+ 
+  
 }
 
 .card-cadastro {
@@ -157,8 +181,10 @@ body {
 }
 
 .card h2 {
+  position: relative;
   margin: 0;
   font-size: 30px;
+  top: 20px;
 }
 
 .formulario {
@@ -175,14 +201,14 @@ body {
 }
 
 .formulario input {
-  border: 2px solid #32b9cd;
+  border: 2px solid green;
   height: 30px;
   text-align: center;
   border-radius: 10px;
 }
 
 .formulario select {
-  border: 2px solid #32b9cd;
+  border: 2px solid green;
   background-color: white;
   color: gray;
   height: 36px;
@@ -197,6 +223,8 @@ body {
 }
 
 .botao {
+  position: relative;
+  bottom: 17px;
   cursor: pointer;
   font-family: "Barlow", sans-serif;
   border: 0;
@@ -204,7 +232,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
-  background-color: #e6005a;
+  background-color: #43a756;
   width: 120px;
   height: 30px;
   align-self: center;
@@ -249,9 +277,14 @@ body {
 .footer {
   height: var(--tamanho-footer);
   width: 100%;
+<<<<<<< HEAD
   background-color: #101010;
   color: #fff;
   align-items: center;
+=======
+  background-color: beige;
+  color:  #43a756;
+>>>>>>> f868ba4bb1b9a9e17325264f9967863fa674a27e
 }
 
 .footer h4 {

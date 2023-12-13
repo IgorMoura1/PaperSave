@@ -20,15 +20,15 @@ function autenticar(req, res) {
                     if (resultadoAutenticar.length == 1) {
                         console.log(resultadoAutenticar);
 
-                        aquarioModel.buscarAquariosPorEmpresa(resultadoAutenticar[0].empresaId)
+                        aquarioModel.buscarAquariosPorEmpresa(resultadoAutenticar[0].id)
                             .then((resultadoAquarios) => {
                                 if (resultadoAquarios.length > 0) {
                                     res.json({
                                         id: resultadoAutenticar[0].id,
                                         email: resultadoAutenticar[0].email,
                                         nome: resultadoAutenticar[0].nome,
-                                        senha: resultadoAutenticar[0].senha,
-                                        aquarios: resultadoAquarios
+                                        senha: resultadoAutenticar[0].senha
+                                       
                                     });
                                 } else {
                                     res.status(204).json({ aquarios: [] });
@@ -56,7 +56,8 @@ function cadastrar(req, res) {
     var nome = req.body.nomeServer;
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
-    var empresaId = req.body.empresaServer;
+    var cep = req.body.cepServer;
+    var num = req.body.numServer;
 
     // Faça as validações dos valores
     if (nome == undefined) {
@@ -65,12 +66,12 @@ function cadastrar(req, res) {
         res.status(400).send("Seu email está undefined!");
     } else if (senha == undefined) {
         res.status(400).send("Sua senha está undefined!");
-    } else if (empresaId == undefined) {
-        res.status(400).send("Sua empresa está undefined!");
+    } else if (cep == undefined) {
+        res.status(400).send("Seu cep está undefined!");
     } else {
 
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrar(nome, email, senha, empresaId)
+        usuarioModel.cadastrar(nome, email, senha, cep, num)
             .then(
                 function (resultado) {
                     res.json(resultado);
